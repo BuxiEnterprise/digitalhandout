@@ -8,25 +8,14 @@
 </head>
 <body>
     <h1>Digital Post - a era sem fim</h1>
-    <div>
-
-            <h2><a href="">Leosol</a></h2>
-            <h3>hoje iremos catucar</h3>
-            <h5>Published 1.1.2013, 02:23</h5>
-    </div>
-    <a><img src="https://www.habbo.com.br/habbo-imaging/avatar/hr-155-42.hd-180-14.ch-210-1408.lg-3023-64.ha-3463-64.ea-1404-64.fa-3344-1408%2Cs-0.g-1.d-2.h-2.a-0%2C71dd6ef6fdaf5ecaddb37c473dc6cd7e.png" alt=""></a>
-
+    {% for post in posts %}
     <div>
             
-            <h2><a href="">Leosol</a></h2>
-            <h3>hoje iremos catucar</h3>
-            <h5>Published 1.1.2013, 02:23</h5>
+            <h2><a href="">{{post.title}} - </a></h2>
+            <h3>{{post.text|linebreaks}}</h3>
+            <h5>Publicado em:{{post.published_date}}</h5>
+            <p>{{post.author}}</p>
     </div>
-    <div>
-            
-            <h2><a href="">Leosol</a></h2>
-            <h3>hoje iremos catucar</h3>
-            <h5>Published 1.1.2013, 02:23</h5>
-    </div>
+    {% endfor%}
 </body>
 </html>
