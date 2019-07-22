@@ -1,0 +1,41 @@
+body{
+    background: rgb(255, 201, 131)
+}
+h2 a,div h2.titletxt{
+    color: rgb(250, 70, 70);
+    font-family: 'Bitter', serif;
+}
+h2 a:hover{
+    color: blueviolet;
+    text-decoration-line: none;
+}
+h3{
+    color: rgb(0,0,0);
+    font-family: 'Indie Flower', cursive;
+}
+h5{
+    color: rgb(189, 135, 135);
+    font-family: 'Francois One', sans-serif;
+    padding-left: 65%;
+}
+
+body .post{
+    padding-left: 15px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(255, 234, 141);
+    background: rgb(255, 234, 141);
+}
+.page-header{
+    background-color: #ec3131;
+    margin-top: 0;
+    padding: 25px 20px 25px 40px;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+    font-family: 'Lobster';
+}
+.content{
+    margin-left: 40px;
+}

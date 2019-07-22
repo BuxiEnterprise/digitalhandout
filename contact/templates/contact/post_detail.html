@@ -1,0 +1,12 @@
+{% extends 'contact/base.html' %}
+{% block content %}
+    <div class="post">
+            <h2 class="titletxt">{{post.title}}</h2>
+            <h3>{{post.text|linebreaks}}</h3>
+            <div>
+                {% if post.published_date %}
+                <h5>Publicado em:{{post.published_date}}</h5>
+                {% endif %}
+            </div>
+    </div>
+{% endblock %}
